@@ -15,6 +15,7 @@ public class ObstacleCollisionHandler : MonoBehaviour
 		{
 			Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Obstacle"), LayerMask.NameToLayer("Player"), true);
 			Destroy(hittedObject);
+
 			CollidedWithObstacle?.Invoke();
 			_lastObstacleCollisonTime = Time.time;
 		}

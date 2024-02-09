@@ -1,5 +1,4 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PhysicsMovement : MonoBehaviour
@@ -159,9 +158,9 @@ public class PhysicsMovement : MonoBehaviour
 		return direction;
 	}
 
-	private void OnDrawGizmos()
-	{
-		Gizmos.color = Color.green;
-		Gizmos.DrawRay(_transform.position, _rigidbody.velocity);
-	}
+	//private void OnDrawGizmos()
+	//{
+	//	Gizmos.color = Color.green;
+	//	Gizmos.DrawRay(_transform.position, _rigidbody.velocity);
+	//}
 }

@@ -14,20 +14,6 @@ public class SurfaceSlider : MonoBehaviour
         return forward - Vector3.Dot(forward, _normal) * _normal;
     }
 
- //   private void OnCollisionEnter(Collision collision)
-	//{
-	//	NormalProvider normalProvider = collision.gameObject.GetComponent<NormalProvider>();
-
-	//	if (normalProvider is not null && normalProvider.CanProvideNormal)
-	//	{
-	//		_normal = collision.GetContact(0).normal;
-	//	}
-	//	else
-	//	{
-	//		_normal = transform.up;
-	//	}
- //   }
-
 	private void OnDrawGizmos()
 	{
 		Gizmos.color = Color.blue;

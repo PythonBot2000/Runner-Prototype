@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Invulnerable : PlayerState
@@ -28,7 +26,7 @@ public class Invulnerable : PlayerState
 		color.a = 0.3f;
 		_materialController.Flash(color);
 
-		//Debug.Log("—осто€ние: неу€звимость");
+		Debug.Log("—осто€ние: неу€звимость");
 	}
 
 	public override void LogicUpdate()

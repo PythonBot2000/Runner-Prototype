@@ -14,7 +14,8 @@ public class PlayerStateMachine
 		_playerStates = new Dictionary<Type, PlayerState>()
 		{
 			{ typeof(Sliding), new Sliding(_player, this) },
-			{ typeof(Invulnerable), new Invulnerable(_player, this) }
+			{ typeof(Invulnerable), new Invulnerable(_player, this) },
+			{ typeof(Dead), new Dead(_player, this) }
 		};
 	}
 
